@@ -1,4 +1,4 @@
-#inculde "shall.h"
+#include "shall.h"
 
 /**
  * path_cmd - check and execute command with path
