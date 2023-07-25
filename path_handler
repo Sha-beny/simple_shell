@@ -1,9 +1,9 @@
-#inculde "shall.h"
+#include "shell.h"
 
-/**
+/** 
  * path_cmd - check and execute command with path
  * @cmd: arreys of string
- * @input: parsed input
+ * @input: parsed
  * return: 0 or 1
  */
 
@@ -40,7 +40,7 @@ int path_cmd(char **cmd)
  * return: cmd
  */
 
-char *build_path(char *dir, char *value)
+char build_path(char *dir, char *value)
 {
 	char *cmd;
 	size_t len;
