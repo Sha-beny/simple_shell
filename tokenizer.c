@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include "shell.h"
+=======
+nclude "shell.h"
+>>>>>>> b30cb277fa090ac540fa1587f6903c598715025d
 
 /**
  * **strn_tk - splits a string into words
@@ -17,7 +21,11 @@ char **strn_tk(char *str, char *d)
 	if (!d)
 		d = " ";
 	for (i = 0; str[i] != '\0'; i++)
+<<<<<<< HEAD
 		if (!custom_delim(str[i], d) && (custom_delim(str[i + 1], d) || !str[i + 1]))
+=======
+		if (!custom_delimeter(str[i], d) && (custom_delimeter(str[i + 1], d) || !str[i + 1]))
+>>>>>>> b30cb277fa090ac540fa1587f6903c598715025d
 			numwords++;
 
 	if (numwords == 0)

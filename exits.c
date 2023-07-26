@@ -1,6 +1,7 @@
 #include "shell.h"
 
 /**
+<<<<<<< HEAD
  * custom_put - prints an input string
  * @str: string to be printed
  *
@@ -80,4 +81,76 @@ int custom_puts_fd(char *str, int fd)
 		i += custom_put_fd(*str++, fd);
 	}
 	return (i);
+=======
+ **custom_strncpy - copies a string
+ *@dest: the destination string to be copied to
+ *@src: the source string
+ *@n: amount of characters to be copied
+ *Return: the compared string
+ */
+char *custom_strncpy(char *dest, char *src, int n)
+{
+	int i, j;
+	char *s = dest;
+
+	i = 0;
+	while (src[i] != '\0' && i < n - 1)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	if (i < n)
+	{
+		j = i;
+		while (j < n)
+		{
+			dest[j] = '\0';
+			j++;
+		}
+	}
+	return (s);
+}
+
+/**
+ **custom_strncat - compares two strings
+ *@dest: first string
+ *@src: second string
+ *@n: amount of bytes to be maximally used
+ *Return: the compared string
+ */
+char *custom_strncat(char *dest, char *src, int n)
+{
+	int i, j;
+	char *s = dest;
+
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
+		i++;
+	while (src[j] != '\0' && j < n)
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	if (j < n)
+		dest[i] = '\0';
+	return (s);
+}
+
+/**
+ **custom_strchr - locates a character in a string
+ *@s: string to be parsed
+ *@c: character to look for
+ *Return: (s) a pointer to the memory area s
+ */
+char *custom_strchr(char *s, char c)
+{
+	do {
+		if (*s == c)
+			return (s);
+	} while (*s++ != '\0');
+
+	return (NULL);
+>>>>>>> b30cb277fa090ac540fa1587f6903c598715025d
 }
