@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #include "shell.h"
-=======
-nclude "shell.h"
->>>>>>> b30cb277fa090ac540fa1587f6903c598715025d
 
 /**
  * custom_strcpy - copies a string
