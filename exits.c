@@ -10,7 +10,7 @@
 char *custom_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
-	char *s = dest;
+	char *a = dest;
 
 	i = 0;
 	while (src[i] != '\0' && i < n - 1)
@@ -27,7 +27,7 @@ char *custom_strncpy(char *dest, char *src, int n)
 			j++;
 		}
 	}
-	return (s);
+	return (a);
 }
 
 /**
@@ -40,7 +40,7 @@ char *custom_strncpy(char *dest, char *src, int n)
 char *custom_strncat(char *dest, char *src, int n)
 {
 	int i, j;
-	char *s = dest;
+	char *a = dest;
 
 	i = 0;
 	j = 0;
@@ -54,21 +54,21 @@ char *custom_strncat(char *dest, char *src, int n)
 	}
 	if (j < n)
 		dest[i] = '\0';
-	return (s);
+	return (a);
 }
 
 /**
  **custom_strchr - locates a character in a string
- *@s: string to be parsed
- *@c: character to look for
- *Return: (s) a pointer to the memory area s
+ *@a: string to be parsed
+ *@b: character to look for
+ *Return: (a) a pointer to the memory area s
  */
-char *custom_strchr(char *s, char c)
+char *custom_strchr(char *a, char b)
 {
 	do {
-		if (*s == c)
-			return (s);
-	} while (*s++ != '\0');
+		if (*a == b)
+			return (a);
+	} while (*a++ != '\0');
 
 	return (NULL);
 }
