@@ -1,7 +1,6 @@
 #include "shell.h"
 
 /**
-<<<<<<< HEAD
  * custom_put - prints an input string
  * @str: string to be printed
  *
@@ -81,8 +80,8 @@ int custom_puts_fd(char *str, int fd)
 		i += custom_put_fd(*str++, fd);
 	}
 	return (i);
-=======
- **custom_strncpy - copies a string
+/**
+ *custom_strncpy - copies a string
  *@dest: the destination string to be copied to
  *@src: the source string
  *@n: amount of characters to be copied
@@ -152,5 +151,4 @@ char *custom_strchr(char *s, char c)
 	} while (*s++ != '\0');
 
 	return (NULL);
->>>>>>> b30cb277fa090ac540fa1587f6903c598715025d
 }
