@@ -1,1 +1,1 @@
-A group project on simple_shell
+Simple_Shell team project
