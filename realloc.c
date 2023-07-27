@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * memory_set - fill memory with a constant byte
+ * memory_set - fills memory with a constant byte
  * @s: pointer to the memory area
  * @b: byte to fill *s with
  * @n: amount of bytes to be filled
@@ -11,20 +11,20 @@ char *memory_set(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0, i < n; i++)
+	for (i = 0; i < n; i++)
 		s[i] = b;
 	return (s);
 }
 
 /**
- * file_free - free a string of strings
+ * file_free - frees a string of strings
  * @pp: string of strings
  */
-void file_free(char *pp)
+void file_free(char **pp)
 {
 	char **a = pp;
 
-	if (!p)
+	if (!pp)
 		return;
 	while (*pp)
 		free(*pp++);

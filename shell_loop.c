@@ -1,4 +1,4 @@
-nclude "shell.h"
+#include "shell.h"
 
 /**
  * hsh - our main shell loop
@@ -155,4 +155,4 @@ void fork_cmd(info_t *info)
 				printerror(info, "Permission denied\n");
 		}
 	}
-}
+	}
